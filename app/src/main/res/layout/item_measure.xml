@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/measure_list_item_layout_main"	 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	    
+       <TextView
+            android:id="@+id/measure_list_item_titleTextView"	            
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"	            
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+    
+	<GridLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:columnCount="2" >     
+	
+	    <TextView
+	        android:id="@+id/measure_list_item_customerTextView"	        
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:paddingLeft="4dp"	        
+	        android:layout_gravity="left"
+            android:gravity="left"	        
+	        android:textAppearance="?android:attr/textAppearanceMedium"/>
+	    
+       <TextView
+            android:id="@+id/measure_list_item_status"	            
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"            
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"            	   
+            android:layout_gravity="right"
+            android:gravity="right"	            
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </GridLayout>
+    
+	<TextView
+        android:id="@+id/measure_list_item_adrworkTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"        
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+	<TextView
+        android:id="@+id/measure_list_item_noteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"                
+        android:paddingLeft="4dp"        
+        android:paddingRight="4dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+	
+</LinearLayout>

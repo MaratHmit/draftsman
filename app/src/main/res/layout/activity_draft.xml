@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/textViewNumDraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewNameDraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/lbl_name"
+            android:labelFor="@+id/editTextNameDraft" />
+
+        <EditText
+            android:id="@+id/editTextNameDraft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:descendantFocusability="beforeDescendants" />
+
+        <Button
+            android:id="@+id/buttonDraftNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_note" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@android:style/Widget.ActionBar"
+            android:orientation="vertical" >
+
+            <ToggleButton
+                android:id="@+id/buttonDrawArrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:checked="true"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawPen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_pencil"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_line"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawRect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_rectangle"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_text"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawVText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_vertext"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonDrawDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_eraser"
+                android:textOn=""
+                android:textOff=""/>
+
+            <ToggleButton
+                android:id="@+id/buttonObjectMove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_move"
+                android:textOn=""
+                android:textOff=""/>
+
+            <Button
+                android:id="@+id/buttonUndo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_undo" />
+
+            <Button
+                android:id="@+id/buttonClearAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_clear" />
+
+        </LinearLayout>
+
+
+            <ViewFlipper
+                android:id="@+id/viewflipperDrafts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </ViewFlipper>
+
+
+        
+    </LinearLayout>
+
+</LinearLayout>

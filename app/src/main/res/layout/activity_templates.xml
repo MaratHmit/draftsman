@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:weightSum="100">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewNames"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="75"
+            android:background="@color/primary_light" />
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewFlipperTemplates"
+            android:layout_gravity="center_vertical"
+            android:background="@color/primary_dark"
+            android:layout_weight="25" >
+         </ViewFlipper>
+
+    </LinearLayout>
+
+
+</LinearLayout>

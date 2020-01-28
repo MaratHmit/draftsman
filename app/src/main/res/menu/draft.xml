@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ru.etalon5.draftsman.MainActivity">
+
+    <item
+        android:id="@+id/action_addDraft"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/app_add"/>
+    <item
+        android:id="@+id/action_cloneDraft"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_clone"
+        android:title="@string/app_clone"/>
+    <item
+        android:id="@+id/action_tempaltesDraft"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_templates"
+        android:title="@string/app_templates"/>
+    <item
+        android:id="@+id/action_deleteDraft"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/app_delete"/>  
+  	<item
+        android:id="@+id/action_saveAsTemplate"
+        app:showAsAction="ifRoom"
+        android:title="@string/save_as_template"/>
+    <item
+       android:id="@+id/action_settingsDraft"
+       app:showAsAction="never"
+       android:title="@string/settingsDraft"/>
+	
+	
+</menu>
